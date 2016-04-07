@@ -57,6 +57,8 @@ def print_shadowsocks():
         pass
     print('shadowsocks %s' % version)
 
+def print_bytes(data):
+    print(['{:02x}'.format(ord(d)) for d in data])
 
 def find_config():
     config_path = 'config.json'
