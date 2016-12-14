@@ -6,6 +6,19 @@ shadowsocks
 [![Coverage Status]][Coverage]
 
 A fast tunnel proxy that helps you bypass firewalls.
+## Fork Change:
+
+Add route ability to shadowsocks, you can setup your network as follows:
+
+local.py <------------> router <------------> server.py
+
+## How to start router
+python local.py -r 
+
+add -r params, for example:
+````
+python local.py -b 0.0.0.0 -l 1089 -s your_server -p your_server_port -k your_password -m rc4-md5 -r
+````
 
 Server
 ------
