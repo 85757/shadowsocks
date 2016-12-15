@@ -13,6 +13,8 @@ Add route ability to shadowsocks, you can setup your network as follows:
 local.py <------------> router <------------> server.py
 
 ## How to start router
+checkout to develop branch
+
 python local.py -r 
 
 add -r params, for example:
